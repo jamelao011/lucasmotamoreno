@@ -43,7 +43,7 @@ Got questions or collaboration ideas? Use the contact form to connect directly w
 
 - **📞 Phone**: (11) 96022-2328
 - **📧 Email**: lucasmotamoreno2015@gmail.com
-- **🔗 LinkedIn**: [Connect with me on LinkedIn](https://www.linkedin.com/in/your-profile-link)
+- **🔗 LinkedIn**: [Connect with me on LinkedIn](https://www.linkedin.com/in/lucas-mota-moreno-498b59264/)
 - **🌐 Website**: [motamoreno.com](https://motamoreno.com) 
 
 ---
