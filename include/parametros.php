@@ -35,6 +35,6 @@ $unidades = array(
 
 $urlbase = "https://www.motamoreno.byethost6.com/";
 // Parâmetros para Formulário de Contato
-$smtp_contato = "email-ssl.com.br";
-$email_remetente = "clientes@rfcdigital.com.br";
-$senha_remetente = 'RFdigitalconsultoria1.';
+$smtp_contato = "";
+$email_remetente = "";
+$senha_remetente = '';
