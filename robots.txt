@@ -1,0 +1,5 @@
+User-agent: *
+
+Disallow: /include/
+
+Sitemap: https://www.motamoreno.byethost6.com/sitemap.xml

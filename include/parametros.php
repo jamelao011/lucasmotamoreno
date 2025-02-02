@@ -29,11 +29,11 @@ $unidades = array(
     "instagram" => "https://www.instagram.com/lucass_2m/",
     "facebook" => "",
     "github" => "https://github.com/jamelao011",
-    "linkedin" => "",
+    "linkedin" => "https://www.linkedin.com/in/lucas-mota-moreno-498b59264/",
   ),
 );
 
-$urlbase = "https://www.rfcdigital.com.br/projeto/motamoreno/";
+$urlbase = "https://www.motamoreno.byethost6.com/";
 // Parâmetros para Formulário de Contato
 $smtp_contato = "email-ssl.com.br";
 $email_remetente = "clientes@rfcdigital.com.br";

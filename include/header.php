@@ -20,13 +20,17 @@
         <div class="col-lg-5 px-5 text-end">
             <div class="h-100 d-inline-flex align-items-center">
                 <a class="btn btn-sm-square btn-outline-body btn-outline-body-github me-1"
-                    href="<?php echo $unidades[1]["github"] ?>"><i class="fab fa-github"></i></a>
+                    href="<?php echo $unidades[1]["github"] ?>" target="_blank" rel="noopener noreferrer"
+                    aria-label="Visite o GitHub"><i class="fab fa-github"></i></a>
                 <a class="btn btn-sm-square btn-outline-body btn-outline-body-whatsapp me-1"
-                    href="<?php echo $unidades[1]["link_whatsapp"] ?>"><i class="fab fa-whatsapp"></i></a>
+                    href="<?php echo $unidades[1]["link_whatsapp"] ?>" target="_blank" rel="noopener noreferrer"
+                    aria-label="Entre em contato via WhatsApp"><i class="fab fa-whatsapp"></i></a>
                 <a class="btn btn-sm-square btn-outline-body btn-outline-body-instagram me-1"
-                    href="<?php echo $unidades[1]["instagram"] ?>"><i class="fab fa-instagram"></i></a>
+                    href="<?php echo $unidades[1]["instagram"] ?>" target="_blank" rel="noopener noreferrer"
+                    aria-label="Visite meu Instagram"><i class="fab fa-instagram"></i></a>
                 <a class="btn btn-sm-square btn-outline-body btn-outline-body-linkedin me-0"
-                    href="<?php echo $unidades[1]["linkedin"] ?>"><i class="fab fa-linkedin"></i></a>
+                    href="<?php echo $unidades[1]["linkedin"] ?>" target="_blank" rel="noopener noreferrer"
+                    aria-label="Visite meu Linkedin"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
     </div>

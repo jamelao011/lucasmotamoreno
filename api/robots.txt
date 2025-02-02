@@ -1,5 +1,0 @@
-User-agent: *
-
-Disallow: /include/
-
-Sitemap: https://www.rfcdigital.com.br/projeto/motamoreno/sitemap.xml

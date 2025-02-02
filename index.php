@@ -509,65 +509,65 @@ include './include/head.php';
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
     <script>
-        $(function () {
-            var SPMaskBehavior = function (val) {
+    $(function() {
+        var SPMaskBehavior = function(val) {
                 return val.replace(/\D/g, "").length === 11 ? "(00) 00000-0000" : "(00) 0000-00009";
             },
-                spOptions = {
-                    onKeyPress: function (val, e, field, options) {
-                        field.mask(SPMaskBehavior.apply({}, arguments), options);
-                    },
-                    placeholder: "(__) ____-____"
-                };
-
-            $(".form-telefone").mask(SPMaskBehavior, spOptions);
-
-            $("#contactForm").validate({
-                errorClass: "control-label",
-                validClass: "control-label",
-                rules: {
-                    "nome": {
-                        required: true
-                    },
-                    "email": {
-                        required: true,
-                        email: true
-                    },
-                    "telefone": {
-                        required: true
-                    },
-                    "mensagem": {
-                        required: true
-                    }
+            spOptions = {
+                onKeyPress: function(val, e, field, options) {
+                    field.mask(SPMaskBehavior.apply({}, arguments), options);
                 },
-                submitHandler: function (form) {
-                    var dados = $("#contactForm").serialize();
-                    $.ajax({
-                        type: "POST",
-                        url: "./include/phpmailer.php",
-                        data: dados,
-                        dataType: "json",
-                        beforeSend: function () {
-                            $(".loading").removeClass("d-none").addClass("d-block");
-                            $(".btn-send").html("Aguarde...").attr("disabled", "disabled");
-                        },
-                        success: function (data) {
-                            $(".loading").removeClass("d-block").addClass("d-none");
-                            $(".sent-message").removeClass("d-none").addClass("d-block");
-                            document.getElementById("contactForm").reset();
-                        },
-                        error: function (xhr) {
-                            $(".loading").removeClass("d-block").addClass("d-none");
-                            $(".error-message").removeClass("d-none").addClass("d-block");
-                            console.warn(xhr.responseText);
-                        },
-                        complete: function () {
-                            $(".btn-send").html("Enviar").removeAttr("disabled");
-                        }
-                    });
+                placeholder: "(__) ____-____"
+            };
+
+        $(".form-telefone").mask(SPMaskBehavior, spOptions);
+
+        $("#contactForm").validate({
+            errorClass: "control-label",
+            validClass: "control-label",
+            rules: {
+                "nome": {
+                    required: true
+                },
+                "email": {
+                    required: true,
+                    email: true
+                },
+                "telefone": {
+                    required: true
+                },
+                "mensagem": {
+                    required: true
                 }
-            });
+            },
+            submitHandler: function(form) {
+                var dados = $("#contactForm").serialize();
+                $.ajax({
+                    type: "POST",
+                    url: "./include/phpmailer.php",
+                    data: dados,
+                    dataType: "json",
+                    beforeSend: function() {
+                        $(".loading").removeClass("d-none").addClass("d-block");
+                        $(".btn-send").html("Aguarde...").attr("disabled", "disabled");
+                    },
+                    success: function(data) {
+                        $(".loading").removeClass("d-block").addClass("d-none");
+                        $(".sent-message").removeClass("d-none").addClass("d-block");
+                        document.getElementById("contactForm").reset();
+                    },
+                    error: function(xhr) {
+                        $(".loading").removeClass("d-block").addClass("d-none");
+                        $(".error-message").removeClass("d-none").addClass("d-block");
+                        console.warn(xhr.responseText);
+                    },
+                    complete: function() {
+                        $(".btn-send").html("Enviar").removeAttr("disabled");
+                    }
+                });
+            }
         });
+    });
     </script>
 </body>
 
